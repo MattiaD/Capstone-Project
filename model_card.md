@@ -11,6 +11,13 @@ these variables represent the characteristics of the customer at the time the lo
 
 ## Performance
 
+Accuracy:0.696
+Precision:0.2361111111111111
+Recall:0.4473684210526316
+F1 Score:0.3090909090909091
+
+![Screenshot](ROC_RF.png)
+
 
 ## Limitations
 the model performs very poorly despite grid search and bayesian optimisation. 
