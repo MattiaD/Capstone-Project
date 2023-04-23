@@ -1,23 +1,23 @@
 # Model Card
 
-See the [example Google model cards](https://modelcards.withgoogle.com/model-reports) for inspiration. 
-
 ## Model Description
 
-**Input:** Describe the inputs of your model 
+**Input:** The model takes as input ten ten fetures 4 numerical and 6 categorical. 
+these variables represent the characteristics of the customer at the time the loan was granted. 
 
-**Output:** Describe the output(s) of your model
+**Output:** The output is the prediction of the quality/riskiness of the loan defined as positive or negative.
 
-**Model Architecture:** Describe the model architecture you’ve used
+**Model Architecture:** The model uses a random forest optimised using Bayesian optimisation.
 
 ## Performance
 
-Give a summary graph or metrics of how the model performs. Remember to include how you are measuring the performance and what data you analysed it on. 
 
 ## Limitations
+the model performs very poorly despite grid search and bayesian optimisation. 
+Its use is only illustrative for academic purposes and has no useful features for real-world implementation.
 
-Outline the limitations of your model.
 
 ## Trade-offs
-
-Outline any trade-offs of your model, such as any circumstances where the model exhibits performance issues. 
+Given the limited number of data and the non-triviality of the problem presented, the model performs very poorly and is not applicable in reality. 
+In particular, it performs poorly in predicting negative class, a limitation that makes it highly unsuitable for the banking context for which being able to define the riskiest loans is crucial. 
+This underperformance can be justified by undersampling the high-risk class and can be corrected in the future through oversampling techniques.
