@@ -17,7 +17,7 @@ Description of which hyperparameters you have and how you chose to optimise them
 A summary of your results and what you can learn from your model 
 
 You can include images of plots using the code below:
-![Screenshot](image.png)
+![Screenshot](ROC_RF.png)
 
 
 
